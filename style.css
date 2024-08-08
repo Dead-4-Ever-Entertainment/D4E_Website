@@ -1009,7 +1009,7 @@ html {
 
   .banner h1 {
     margin-top: 20px;
-    margin-left: 100px; 
+    margin-left: 90px; 
   }
 
   .banner button {
@@ -1017,6 +1017,6 @@ html {
   }
 
   .banner .main-page-text {
-    font-size: 70%;
+    font-size: 50%;
   }
 }
