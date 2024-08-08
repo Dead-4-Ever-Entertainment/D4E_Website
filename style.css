@@ -1005,4 +1005,16 @@ html {
     width: 100%; /* Ensure the banner takes up the full width of its container */
     text-align: center; /* Center the content inside the banner */
   }
+
+  .banner h1 {
+    margin-left: 40px; /* Optional: Adjust margin for better spacing */
+  }
+
+  .banner button {
+    margin-right: 125px; /* Optional: Adjust margin for spacing */
+  }
+
+  .banner .main-page-text {
+    font-size: 80%;
+  }
 }
