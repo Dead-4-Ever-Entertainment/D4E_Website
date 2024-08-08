@@ -973,11 +973,12 @@ html {
   }
 
   .banner h1 {
-    margin-left: 40px; /* Optional: Adjust margin for better spacing */
+    margin-top: 50px;
+    margin-left: 40px; 
   }
 
   .banner button {
-    margin-right: 125px; /* Optional: Adjust margin for spacing */
+    margin-right: 125px; 
   }
 
   .sidebar {
@@ -1007,11 +1008,12 @@ html {
   }
 
   .banner h1 {
-    margin-left: 40px; /* Optional: Adjust margin for better spacing */
+    margin-top: 50px;
+    margin-left: 100px; 
   }
 
   .banner button {
-    margin-right: 125px; /* Optional: Adjust margin for spacing */
+    margin-right: 220px; 
   }
 
   .banner .main-page-text {
