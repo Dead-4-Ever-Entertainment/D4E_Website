@@ -968,6 +968,7 @@ html {
 
   .banner {
     position: relative;
+    top: 0;
   }
 
   .sidebar {
