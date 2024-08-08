@@ -997,3 +997,12 @@ html {
     height: 18rem;
   }
 }
+
+@media (orientation: landscape) {
+  /* Styles for devices in landscape mode */
+  .banner {
+    top: 0;
+    width: 100%; /* Ensure the banner takes up the full width of its container */
+    text-align: center; /* Center the content inside the banner */
+  }
+}
