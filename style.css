@@ -1008,7 +1008,7 @@ html {
   }
 
   .banner h1 {
-    margin-top: 50px;
+    margin-top: 20px;
     margin-left: 100px; 
   }
 
@@ -1017,6 +1017,6 @@ html {
   }
 
   .banner .main-page-text {
-    font-size: 80%;
+    font-size: 70%;
   }
 }
