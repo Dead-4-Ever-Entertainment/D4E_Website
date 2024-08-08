@@ -999,7 +999,7 @@ html {
   }
 }
 
-@media (max-width: 600px) and (orientation: landscape) {
+@media (max-width: 1280px) and (orientation: landscape) {
   /* Styles for devices in landscape mode */
   .banner {
     top: 0;
