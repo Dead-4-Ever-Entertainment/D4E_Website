@@ -1017,11 +1017,11 @@ html {
   }
 
   .banner .main-page-text {
-    font-size: 10%;
-    margin-bottom: 5px;
+    font-size: 5%;
+    margin-bottom: 10px;
   }
 
   .banner p {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 }
