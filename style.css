@@ -959,7 +959,15 @@ html {
 
 @media (max-width: 500px) {
   html {
-    font-size: 30%;
+    font-size: 45%;
+  }
+
+  .main-page-text{
+    font-size: 20%;
+  }
+
+  .banner {
+    position: relative;
   }
 
   .sidebar {
