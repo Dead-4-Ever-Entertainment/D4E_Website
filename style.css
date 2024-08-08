@@ -972,6 +972,14 @@ html {
     text-align: center; /* Center the content inside the banner */
   }
 
+  .banner h1 {
+    margin: 10px 0; /* Optional: Adjust margin for better spacing */
+  }
+
+  .banner button {
+    margin-top: 10px; /* Optional: Adjust margin for spacing */
+  }
+
   .sidebar {
     width: 100%;
     right: -100%;
