@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dead 4 Ever</title>
-    <link rel="icon" type="image/jpg" href="images/icon.jpg"/>
+    <link rel="icon" type="image/jpg" href="images/d4e_icon.png"/>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -14,7 +14,6 @@
       href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,400;0,600;1,300;1,400;1,600&family=Muli:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
       rel="stylesheet"
     />
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
   </head>
   <body>
@@ -200,38 +199,36 @@
               <h2>Joshua Terry</h2>
               <h3>CEO and Lead Programmer</h3>
               <p>
-                Computer Scientist, Game Developer, C++/Python 
-                Programmer, Musician, Pilot, and Physics Hobbyist!
+                "Computer Scientist, Game Developer, C++/Python 
+                 Programmer, Musician, Pilot, and Physics Hobbyist."
               </p>
-              <button>Read More</button>
+              
             </div>
           </div>
           <div class="card" data-tilt>
             <div class="card-img-wrapper">
-              <img src="images/FlyingPhoto.jpg" alt="Designer" />
+              <img src="images/image_notyetavailablemale.jpg" alt="Designer" />
             </div>
             <div class="card-info">
               <h2>Ronald Pozek III</h2>
               <h3>HR and Lead Technician</h3>
               <p>
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores, impedit!"
+                "Alarm, Surveilance, and Access Control Technician."
               </p>
-              <button>Read More</button>
+              
             </div>
           </div>
           <div class="card" data-tilt>
             <div class="card-img-wrapper">
-              <img src="images/FlyingPhoto.jpg" alt="Architect" />
+              <img src="images/image_notyetavailablemale.jpg" alt="Architect" />
             </div>
             <div class="card-info">
               <h2>Zachary Gage</h2>
               <h3>Lead Cabling Technician</h3>
               <p>
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores, impedit!"
+                "Electrical and Cabling Technician."
               </p>
-              <button>Read More</button>
+              
             </div>
           </div>
         </div>
@@ -243,26 +240,26 @@
             <h1 class="contact-heading">Contact</h1>
             <form  id="contact-form">
               <div class="input-group">
-                <input type="text" class="field" id="full-name" required/>
-                <label class="input-label">Full Name</label>
+                <input type="text" class="field" name="full_name" placeholder=" " required/>
+                <label class="input-label" for="full_name">Full Name</label>
               </div>
               <div class="input-group">
-                <input type="text" class="field" id="company" required/>
-                <label class="input-label">Company</label>
+                <input type="text" class="field" name="company" placeholder=" " required/>
+                <label class="input-label" for="company">Company</label>
               </div>
               <div class="input-group">
-                <input type="email" class="field" id="email" required/>
-                <label class="input-label">Email</label>
+                <input type="email" class="field" name="email" placeholder=" " required/>
+                <label class="input-label" for="email">Email</label>
               </div>
               <div class="input-group">
-                <input type="tel" class="field" id="phone_number" required/>
-                <label class="input-label">Phone Number</label>
+                <input type="tel" class="field" name="phone_number" placeholder=" " required/>
+                <label class="input-label" for="phone_number">Phone Number</label>
               </div>
               <div class="input-group">
-                <textarea class="field" id="message" required></textarea>
-                <label class="message">Message</label>
+                <textarea class="field" name="message" placeholder=" " required></textarea>
+                <label class="message" for="message">Message</label>
               </div>
-              <input type="submit" class="submit-btn" value="Submit" />
+              <input type="submit" class="submit-btn" id="button" value="Submit" />
             </form>
           </div>
         </div>
@@ -300,40 +297,31 @@
       crossorigin="anonymous"
     ></script>
     <script src="tilt.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   </body>
 </html>
 
 <script>
-  emailjs.init("j784a0geRr7_GprUh"); // Public API Key
+  // Sending Emails from site
+  emailjs.init('j784a0geRr7_GprUh')
+  const btn = document.getElementById('button');
 
-  document.getElementById('contact-form').addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent default form submission
-      
-      // Collect form data
-      const fullName = document.getElementById('full-name').value;
-      const company = document.getElementById('company').value;
-      const email = document.getElementById('email').value;
-      const number = document.getElementById('phone_number').value;
-      const message = document.getElementById('message').value;
-
-      // Basic validation to check if email is not a "no-reply" address
-      const noReplyPattern = /no-reply|noreply/i;
-      if (noReplyPattern.test(email)) {
-          alert('Please use a valid email address. No-reply addresses are not allowed.');
-          return; // Stop form submission
-    }
-
-      // Send email using EmailJS
-      emailjs.send("default_service", "template_7p6nxyk", {
-          full_name: fullName,
-          company: company,
-          email: email,
-          phone_number: number,
-          message: message
-      }).then(function(response) {
-          alert('Email sent successfully!');
-      }, function(error) {
-          alert('Failed to send email. Please try again.');
+  document.getElementById('contact-form')
+    .addEventListener('submit', function(event) {
+      event.preventDefault();
+  
+      btn.value = 'Sending...';
+  
+      const serviceID = 'default_service';
+      const templateID = 'template_7p6nxyk';
+   
+      emailjs.sendForm(serviceID, templateID, this)
+        .then(() => {
+          btn.value = 'Send Email';
+          alert('Sent!');
+        }, (err) => {
+          btn.value = 'Send Email';
+          alert(JSON.stringify(err));
       });
-  });
+});
 </script>

@@ -704,6 +704,7 @@ html {
   bottom: 6rem;
 }
 
+.field:not(:placeholder-shown) ~ label,
 .field:focus ~ label {
   transform: translateY(-3rem);
   font-size: 1.2rem;
@@ -999,8 +1000,8 @@ html {
   }
 }
 
-@media (max-width: 1280px) and (orientation: landscape) {
-  /* Styles for devices in landscape mode */
+@media (min-width: 1150px) and (max-width: 1280px) and (orientation: landscape) {
+  /* Styles for devices/phones in landscape mode */
   .banner {
     top: 0;
     width: 100%; /* Ensure the banner takes up the full width of its container */
