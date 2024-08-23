@@ -274,8 +274,9 @@ html {
 
 .banner {
   position: absolute;
-  top: 30%;
-  left: 15%;
+  text-align: center;
+  top: 40%;
+  left: 35%;
 }
 
 .banner h1 {
@@ -283,7 +284,6 @@ html {
   font-size: 8rem;
   font-weight: 300;
   color: #fff;
-  width: 50%;
   line-height: 9rem;
   letter-spacing: 0.2rem;
   text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
@@ -295,7 +295,6 @@ html {
   font-family: "Josefin Slab", serif;
   font-size: 4rem;
   color: #fff;
-  width: 70%;
   letter-spacing: 0.1rem;
   margin-bottom: 3rem;
   text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
