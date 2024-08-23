@@ -15,6 +15,7 @@ document.getElementById('contact-form')
       .then(() => {
         btn.value = 'Send Email';
         alert('Sent!');
+        this.reset();
       }, (err) => {
         btn.value = 'Send Email';
         alert(JSON.stringify(err));
