@@ -747,6 +747,25 @@ html {
   color: #a7a7a7;
 }
 
+.contact-info {
+  font-family: "Baloo Da 2", serif;
+  font-size: 1.6rem;
+  color: #a7a7a7;
+}
+
+.phone-number, .address {
+  margin-bottom: 10px;
+}
+
+.phone-number a, .address a {
+  color: #a7a7a7; 
+  text-decoration: none; 
+}
+
+.phone-number a:hover, .address a:hover {
+  text-decoration: underline; /* Add underline on hover for better UX */
+}
+
 .social-list a {
   margin: 0 2rem;
 }

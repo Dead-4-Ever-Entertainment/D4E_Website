@@ -75,7 +75,7 @@
             target="_blank"
             ><i class="fab fa-linkedin"></i
           ></a>
-          <a href="" target="_blank"
+          <a href="https://x.com/Dead4EverEnt" target="_blank"
             ><i class="fab fa-twitter"></i
           ></a>
         </div>
@@ -267,16 +267,24 @@
           <p class="copyright">
             Copyright &copy; 2024, Dead 4 Ever Entertainment and Technology <br> All Rights Reserved
           </p>
+          <div class="contact-info">
+            <p class="phone-number">Phone: <a href="tel+19184179357">(918) 417-9357</a></p> <!-- Add your phone number here -->
+            <p class="address">Address: 
+              <a href="https://maps.google.com/?q=503+E+48th+ST+N,+Tulsa,+OK,+74126"
+                 target="_blank"
+                 rel="noopener noreferrer">
+                 503 E 48th ST N, <br>Tulsa OK, 74126
+                </a></p> <!-- Add your address here -->
+          </div>
           <div class="social-list">
-            <a href="" target="_blank"
-              ><i class="fab fa-github"></i
-            ></a>
+            <a href="https://www.patreon.com/Dead4Ever" target="_blank">
+              <i class="fa-brands fa-patreon"></i></a>
             <a
               href=""
               target="_blank"
               ><i class="fab fa-linkedin"></i
             ></a>
-            <a href="" target="_blank"
+            <a href="https://x.com/Dead4EverEnt" target="_blank"
               ><i class="fab fa-twitter"></i
             ></a>
           </div>
@@ -287,38 +295,15 @@
         <i class="fas fa-arrow-up"></i>
       </a>
     </div>
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.js"
       integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
       crossorigin="anonymous"
     ></script>
-    <script src="tilt.js"></script>
+    <script src="scripts/tilt.js"></script>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="scripts/email.js"></script>
   </body>
 </html>
 
-<script>
-  // Sending Emails from site
-  emailjs.init('j784a0geRr7_GprUh')
-  const btn = document.getElementById('button');
-
-  document.getElementById('contact-form')
-    .addEventListener('submit', function(event) {
-      event.preventDefault();
-  
-      btn.value = 'Sending...';
-  
-      const serviceID = 'default_service';
-      const templateID = 'template_7p6nxyk';
-   
-      emailjs.sendForm(serviceID, templateID, this)
-        .then(() => {
-          btn.value = 'Send Email';
-          alert('Sent!');
-        }, (err) => {
-          btn.value = 'Send Email';
-          alert(JSON.stringify(err));
-      });
-});
-</script>
