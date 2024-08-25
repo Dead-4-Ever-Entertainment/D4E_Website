@@ -975,16 +975,13 @@ html {
     width: 35rem;
   }
 
-  .footer {
-    height: 1000px;
+  .footer-content {
+    flex-direction: column; /* Stack the footer items vertically on smaller screens */
+    text-align: center; /* Center-align the text */
   }
 
-  .footer .footer-content{
-    margin-top: 20px;
-    margin-bottom: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .contact-info, .social-list {
+    margin: 10px 0; /* Reduce margin on smaller screens */
   }
 }
 
