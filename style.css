@@ -991,10 +991,7 @@ html {
     text-align: center; /* Center the content inside the banner */
   }
 
-  .banner h1 {
-    margin-top: 50px;
-    margin-left: 40px; 
-  }
+  
 
   .banner button {
     margin-right: 125px; 
@@ -1029,7 +1026,6 @@ html {
   .banner h1 {
     margin-top: 20px;
     margin-left: 85px; 
-    color: #a52a2a;
   }
 
   .banner button {
