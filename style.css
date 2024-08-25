@@ -974,6 +974,13 @@ html {
   .submit-btn {
     width: 35rem;
   }
+
+  .footer {
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media (max-width: 500px) {
