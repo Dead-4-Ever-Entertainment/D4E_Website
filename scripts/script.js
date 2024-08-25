@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var mapLink = document.getElementById('map-link');
   var modal = document.getElementById('map-modal');
   var span = document.getElementsByClassName('close')[0];
+  var img = document.querySelectorAll('.map-option');
 
   // Detect if the user is on an iOS device
   function isIOS() {
@@ -60,6 +61,13 @@ document.addEventListener("DOMContentLoaded", function() {
   // Close the modal when the close button is clicked
   span.addEventListener('click', function() {
     modal.style.display = 'none';
+  });
+
+  // Close the modal and open the selected map option
+  mapOptions.forEach(function(option) {
+    option.addEventListener('click', function() {
+      modal.style.display = 'none';
+    });
   });
 
   // Close the modal if the user clicks outside of it
