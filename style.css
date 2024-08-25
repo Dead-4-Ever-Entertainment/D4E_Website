@@ -436,6 +436,14 @@ html {
   background-color: #c29525;
 }
 
+.main-page-text {
+  font-size: x-large; /* Alternatively, use a specific size like 1.5rem for more consistency */
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+
 .services {
   width: 100%;
   height: 100%;
@@ -972,6 +980,16 @@ html {
     font-size: 2rem;
   }
 
+  .service {
+    max-width: 320px; /* Limits the width of the service container */
+    margin: 0 auto; /* Centers the container horizontally */
+  }
+
+  .service-text {
+    max-width: 300px; /* Limit the maximum width of text for better readability */
+    margin: 0 auto; /* Center the text inside the service container */
+  }
+  
   .field {
     width: 35rem;
   }
@@ -1002,6 +1020,14 @@ html {
 
 
 @media (max-width: 480px) {
+  .main-page-text {
+    font-size: large; /* Alternatively, use a specific size like 1.5rem for more consistency */
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+  }
+  
   .footer-content {
     width: 100%; /* Use full width on very small screens */
   }
@@ -1009,4 +1035,9 @@ html {
   .social-list i {
     font-size: 1.6rem; /* Reduce icon size for smaller screens */
   }
+
+}
+
+@media (max-width: 440px) {
+  
 }
