@@ -989,7 +989,7 @@ html {
     max-width: 300px; /* Limit the maximum width of text for better readability */
     margin: 0 auto; /* Center the text inside the service container */
   }
-  
+
   .field {
     width: 35rem;
   }
@@ -1027,6 +1027,7 @@ html {
     margin-right: 100px;
     margin-top: 20px;
   }
+
   
   .footer-content {
     width: 100%; /* Use full width on very small screens */
@@ -1036,8 +1037,4 @@ html {
     font-size: 1.6rem; /* Reduce icon size for smaller screens */
   }
 
-}
-
-@media (max-width: 440px) {
-  
 }
