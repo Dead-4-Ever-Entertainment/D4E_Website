@@ -955,12 +955,12 @@ html {
 
 @media (max-width: 700px) {
   .banner h1 {
-    font-size: 8rem;
-    line-height: 6rem;
+    font-size: 4rem;
+    line-height: 5rem;
   }
 
   .banner p {
-    font-size: 6rem;
+    font-size: 2rem;
   }
 
   .field {
