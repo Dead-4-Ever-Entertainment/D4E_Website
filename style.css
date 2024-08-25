@@ -991,11 +991,15 @@ html {
   }
 
   .banner h1 {
-    margin-right: 200px; 
+    margin-right: 250px; 
+  }
+
+  .banner p {
+    margin-right: 250px; 
   }
 
   .banner button {
-    margin-right: 125px; 
+    margin-right: 250px; 
   }
 
   .sidebar {
