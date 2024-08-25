@@ -957,7 +957,6 @@ html {
   .banner h1 {
     font-size: 4rem;
     line-height: 5rem;
-    width: 350px;
   }
 
   .banner p {
@@ -996,7 +995,7 @@ html {
   }
 
   .banner p {
-    margin-right: 250px; 
+    margin-right: 300px; 
   }
 
   .banner button {
