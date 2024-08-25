@@ -728,29 +728,29 @@ html {
 
 .footer {
   width: 100%;
-  height: 15rem;
+  height: auto; /* Change height to auto to allow for content flexibility */
   background-color: #17181b;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px 0; /* Add padding for better spacing on smaller screens */
+  box-sizing: border-box; /* Include padding in width calculation */
 }
 
 .footer-content {
   width: 60%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+  align-items: center; /* Align items vertically in the center */
+  text-align: center; /* Center-align text for better presentation on smaller screens */
 }
 
-.copyright {
-  font-family: "Baloo Da 2", serif;
-  font-size: 1.6rem;
-  color: #a7a7a7;
-}
-
-.contact-info {
-  font-family: "Baloo Da 2", serif;
-  font-size: 1.6rem;
-  color: #a7a7a7;
+.copyright,
+.contact-info,
+.social-list {
+  flex: 1 1 100%; /* Make each section take full width on smaller screens */
+  margin-bottom: 15px; /* Add some margin to space out sections on smaller screens */
 }
 
 .phone-number, .address {
@@ -763,11 +763,11 @@ html {
 }
 
 .phone-number a:hover, .address a:hover {
-  text-decoration: underline; /* Add underline on hover for better UX */
+  text-decoration: underline;
 }
 
 .social-list a {
-  margin: 0 2rem;
+  margin: 0 1rem; /* Adjust margin for better spacing on smaller screens */
 }
 
 .social-list i {
@@ -976,12 +976,18 @@ html {
   }
 
   .footer-content {
-    flex-direction: column; /* Stack the footer items vertically on smaller screens */
-    text-align: center; /* Center-align the text */
+    width: 90%; /* Increase width to make better use of screen space */
+    flex-direction: column; /* Stack the footer items vertically */
   }
 
-  .contact-info, .social-list {
-    margin: 10px 0; /* Reduce margin on smaller screens */
+  .social-list a {
+    margin: 10px; /* Adjust margin for better spacing */
+  }
+
+  .copyright,
+  .contact-info,
+  .social-list {
+    text-align: center; /* Center text for better appearance */
   }
 }
 
