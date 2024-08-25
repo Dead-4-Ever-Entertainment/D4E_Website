@@ -975,10 +975,9 @@ html {
     width: 35rem;
   }
 
-  .footer {
+  .footer .footer-content{
     height: 30rem;
     display: flex;
-    margin-top: 100px;
     justify-content: center;
     align-items: center;
   }
