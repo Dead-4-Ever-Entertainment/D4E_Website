@@ -246,6 +246,9 @@ html {
   position: relative;
   perspective: 100rem;
   overflow: hidden;
+  display: flex; /* Use Flexbox to center the content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
 
 .img-wrapper {
@@ -253,6 +256,10 @@ html {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   overflow: hidden;
+  position: absolute; /* Keep it positioned absolutely to span the header */
+  top: 0;
+  left: 0;
+  z-index: 1; /* Ensure the background is behind the banner */
 }
 
 .img-wrapper img {
@@ -273,17 +280,16 @@ html {
 }
 
 .banner {
-  position: absolute;
+  position: relative; /* Change to relative for better control within Flexbox */
   text-align: center;
-  top: 40%;
-  left: 35%;
+  z-index: 2; /* Place the banner above the image */
+  color: #fff;
 }
 
 .banner h1 {
   font-family: "Baloo Da 2", serif;
   font-size: 8rem;
   font-weight: 300;
-  color: #fff;
   line-height: 9rem;
   letter-spacing: 0.2rem;
   text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
@@ -294,7 +300,6 @@ html {
 .banner p {
   font-family: "Josefin Slab", serif;
   font-size: 4rem;
-  color: #fff;
   letter-spacing: 0.1rem;
   margin-bottom: 3rem;
   text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
@@ -317,6 +322,7 @@ html {
   opacity: 0;
   animation: moveBanner 1s 0.9s forwards;
 }
+
 
 @keyframes moveBanner {
   0% {
@@ -994,73 +1000,13 @@ html {
   }
 }
 
-@media (max-width: 500px) {
-  html {
-    font-size: 45%;
+
+@media (max-width: 480px) {
+  .footer-content {
+    width: 100%; /* Use full width on very small screens */
   }
 
-  .main-page-text{
-    font-size: 20%;
-  }
-
-  .banner {
-    width: 100%; /* Ensure the banner takes up the full width of its container */
-    text-align: center; /* Center the content inside the banner */
-  }
-
-  .banner h1 {
-    margin-right: 300px; 
-  }
-
-  .banner p {
-    margin-right: 300px; 
-  }
-
-  .banner button {
-    visibility: hidden;
-  }
-
-  .sidebar {
-    width: 100%;
-    right: -100%;
-  }
-
-  .change .hamburger-menu {
-    right: 38rem;
-  }
-
-  .service {
-    width: 30rem;
-  }
-
-  .footer {
-    height: 18rem;
-  }
-}
-
-@media (min-width: 1150px) and (max-width: 1280px) and (orientation: landscape) {
-  /* Styles for devices/phones in landscape mode */
-  .banner {
-    top: 0;
-    width: 100%; /* Ensure the banner takes up the full width of its container */
-    text-align: center; /* Center the content inside the banner */
-  }
-
-  .banner h1 {
-    margin-top: 20px;
-    margin-left: 85px; 
-  }
-
-  .banner button {
-    margin-right: 250px; 
-  }
-
-  .banner .main-page-text {
-    font-size: 5%;
-    margin-bottom: 10px;
-  }
-
-  .banner p {
-    margin-bottom: 15px;
+  .social-list i {
+    font-size: 1.6rem; /* Reduce icon size for smaller screens */
   }
 }

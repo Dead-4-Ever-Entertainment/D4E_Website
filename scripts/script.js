@@ -34,3 +34,5 @@ document.querySelector(".scroll-btn").addEventListener("click", () => {
     document.querySelector("html").style.scrollBehavior = "unset";
   }, 1000);
 });
+
+document.getElementById('currentYear').textContent = new Date().getFullYear();
