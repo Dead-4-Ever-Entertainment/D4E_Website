@@ -957,7 +957,7 @@ html {
   .banner h1 {
     font-size: 4rem;
     line-height: 5rem;
-    width: max-content;
+    width: 350px;
   }
 
   .banner p {
