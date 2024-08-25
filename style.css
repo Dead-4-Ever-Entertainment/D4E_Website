@@ -992,7 +992,7 @@ html {
   }
 
   .banner h1 {
-    text-align: center; 
+    margin-right: 300px; 
   }
 
   .banner p {
@@ -1000,7 +1000,7 @@ html {
   }
 
   .banner button {
-    margin-right: 300px; 
+    margin-right: 350px; 
   }
 
   .sidebar {
