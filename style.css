@@ -999,7 +999,7 @@ html {
   }
 
   .banner button {
-    margin-right: 600px; 
+    visibility: hidden;
   }
 
   .sidebar {
