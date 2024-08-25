@@ -744,6 +744,8 @@ html {
   flex-wrap: wrap; /* Allow content to wrap on smaller screens */
   align-items: center; /* Align items vertically in the center */
   text-align: center; /* Center-align text for better presentation on smaller screens */
+  color: #fff; /* Set text color to white for all content inside footer-content */
+  font-size: medium;
 }
 
 .copyright,
@@ -751,6 +753,7 @@ html {
 .social-list {
   flex: 1 1 100%; /* Make each section take full width on smaller screens */
   margin-bottom: 15px; /* Add some margin to space out sections on smaller screens */
+  color: #fff; /* Set text color to white for all content inside footer-content */
 }
 
 .phone-number, .address {
