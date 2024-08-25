@@ -1032,13 +1032,15 @@ html {
   }
 
   .banner button {
-    margin-right: 150px; 
+    margin-right: 250px; 
   }
 
   .banner .main-page-text {
     font-size: 5%;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
   }
 
-  
+  .banner p {
+    margin-bottom: 15px;
+  }
 }
