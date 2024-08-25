@@ -783,6 +783,68 @@ html {
   text-decoration: underline;
 }
 
+/* Modal Styles */
+.map-modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+}
+
+.map-modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  display: inline-flex; /* Adjust size based on content */
+  align-items: center;
+  max-width: 90%; /* Optional: limits width to prevent too much stretching */
+  text-align: center;
+  border-radius: 8px; /* Optional: adds rounded corners */
+}
+
+.map-options {
+  display: flex;
+  gap: 20px; /* Space between the options */
+  align-items: center; /* Center items vertically */
+}
+
+.map-option {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2rem;
+  padding: 10px; /* Optional: adds padding around the content */
+}
+
+.map-option img {
+  width: 50px; /* Fixed size for icons */
+  height: 50px; /* Ensure the height matches the width */
+  object-fit: contain; /* Maintain aspect ratio */
+  vertical-align: middle;
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .social-list a {
   margin: 0 1rem; /* Adjust margin for better spacing on smaller screens */
 }

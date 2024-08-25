@@ -36,24 +36,39 @@ document.querySelector(".scroll-btn").addEventListener("click", () => {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-  // Check if the user is on an iOS device
-  var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
   var mapLink = document.getElementById('map-link');
+  var modal = document.getElementById('map-modal');
+  var span = document.getElementsByClassName('close')[0];
 
-  if (isIOS) {
-    // Create a prompt for users to choose between Google Maps and Apple Maps
-    mapLink.href = "javascript:void(0);"; // Prevent the default link from opening
-
-    mapLink.addEventListener('click', function(event) {
-      event.preventDefault();
-      var openGoogle = confirm("Would you like to open Google Maps?");
-      if (openGoogle) {
-        window.location.href = "https://maps.google.com/?q=503+E+48th+ST+N,+Tulsa,+OK,+74126";
-      } else {
-        window.location.href = "maps://?q=503+E+48th+ST+N,+Tulsa,+OK,+74126";
-      }
-    });
+  // Detect if the user is on an iOS device
+  function isIOS() {
+    return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
   }
+
+  // Open the modal or directly navigate based on device type
+  mapLink.addEventListener('click', function(event) {
+    event.preventDefault();
+    
+    if (isIOS()) {
+      modal.style.display = 'block'; // Show modal for iOS users
+    } else {
+      // Open Google Maps directly for non-iOS users
+      window.open('https://maps.google.com/?q=503+E+48th+ST+N,+Tulsa,+OK,+74126', '_blank');
+    }
+  });
+
+  // Close the modal when the close button is clicked
+  span.addEventListener('click', function() {
+    modal.style.display = 'none';
+  });
+
+  // Close the modal if the user clicks outside of it
+  window.addEventListener('click', function(event) {
+    if (event.target == modal) {
+      modal.style.display = 'none';
+    }
+  });
 });
+
 
 document.getElementById('currentYear').textContent = new Date().getFullYear();
