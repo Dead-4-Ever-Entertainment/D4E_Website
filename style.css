@@ -975,6 +975,10 @@ html {
     width: 35rem;
   }
 
+  .footer {
+    height: 50rem;
+  }
+
   .footer .footer-content{
     margin-top: 50px;
     margin-bottom: 50px;
