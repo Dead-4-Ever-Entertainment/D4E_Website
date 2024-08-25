@@ -991,7 +991,10 @@ html {
     text-align: center; /* Center the content inside the banner */
   }
 
-  
+  .banner h1 {
+    margin-top: 500px;
+    margin-right: 200px; 
+  }
 
   .banner button {
     margin-right: 125px; 
