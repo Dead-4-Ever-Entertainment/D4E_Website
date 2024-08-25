@@ -976,12 +976,12 @@ html {
   }
 
   .footer {
-    height: 50rem;
+    height: 100rem;
   }
 
   .footer .footer-content{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
