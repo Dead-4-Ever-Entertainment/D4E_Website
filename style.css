@@ -998,7 +998,9 @@ html {
     margin-right: 300px; 
   }
 
-
+  .banner button {
+    margin-right: 600px; 
+  }
 
   .sidebar {
     width: 100%;
