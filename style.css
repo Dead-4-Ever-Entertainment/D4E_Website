@@ -986,15 +986,11 @@ html {
   }
 
   .banner {
-    top: 0;
     width: 100%; /* Ensure the banner takes up the full width of its container */
     text-align: center; /* Center the content inside the banner */
   }
 
-  .banner h1 {
-    margin-top: 500px;
-    margin-right: 200px; 
-  }
+  
 
   .banner button {
     margin-right: 125px; 
