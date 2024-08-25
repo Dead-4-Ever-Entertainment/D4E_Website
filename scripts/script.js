@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var mapLink = document.getElementById('map-link');
   var modal = document.getElementById('map-modal');
   var span = document.getElementsByClassName('close')[0];
-  var img = document.querySelectorAll('.map-option');
+  var mapOptions = document.querySelectorAll('.map-option');
 
   // Detect if the user is on an iOS device
   function isIOS() {
