@@ -774,6 +774,10 @@ html {
   margin-bottom: 10px;
 }
 
+.address {
+  visibility: hidden;
+}
+
 .phone-number a, .address a {
   color: #a7a7a7; 
   text-decoration: none; 
