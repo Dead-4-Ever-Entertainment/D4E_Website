@@ -1,5 +1,5 @@
 // Sending Emails from site
-emailjs.init('j784a0geRr7_GprUh')
+emailjs.init('j784a0geRr7_GprUh');
 const btn = document.getElementById('button');
 
 document.getElementById('contact-form')

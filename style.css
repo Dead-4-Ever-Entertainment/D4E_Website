@@ -12,6 +12,11 @@ html {
   scroll-behavior: smooth;
 }
 
+html, body {
+  height: 100%; /* Ensure the body takes up the full height of the page */
+  margin: 0; /* Remove default margin */
+}
+
 .spinner-container {
   position: absolute;
   top: 0;
@@ -743,6 +748,7 @@ html {
 .footer {
   width: 100%;
   height: auto; /* Change height to auto to allow for content flexibility */
+  margin-top: auto; /* Push footer to the bottom of the page */
   background-color: #17181b;
   display: flex;
   justify-content: center;
@@ -873,6 +879,48 @@ html {
   box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
 }
+
+/*Jobs Page*/
+.jobs-wrapper {
+  display: flex;
+  flex-direction: column; /* Makes the jobs appear in a vertical list */
+  align-items: center; /* Centers the job listings */
+  gap: 20px;
+  padding: 20px;
+}
+
+.job {
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 24px; /* Increased padding for larger size */
+  border-radius: 12px;
+  width: 360px; /* Increased width by ~20% */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+  font-size: 1.1em; /* Makes the text slightly larger */
+}
+
+.job:hover {
+  transform: scale(1.05);
+}
+
+.apply-btn {
+  background-color: #ff4500;
+  color: white;
+  border: none;
+  padding: 12px 18px; /* Slightly bigger button */
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 18px; /* Bigger button text */
+}
+
+.apply-btn:hover {
+  background-color: #cc3700;
+}
+
+
+/*Styling for phones*/
 
 @media (max-width: 1500px) {
   .about-us-img-wrapper {

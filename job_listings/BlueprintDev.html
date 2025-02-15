@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application - Blueprint Developer</title>
+    <link rel="icon" type="image/jpg" href="../images/d4e_icon.png"/>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="job_styles.css">
+    <script src="https://kit.fontawesome.com/5bb8e4c191.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="job-header" style="background-image: url('../images/server_room.jpg');">
+        <h1 id="job_title">Blueprint Developer (Unreal Engine 5)</h1>
+    </div>
+    <div class="job-container">
+      <h2>Location: Remote</h2>
+      <br>
+      <h2>Job Type: Revenue Share</h2>
+      <br>
+        <h3>Requirements:</h3>
+        <ul>
+          <li><strong>Proficiency in Blueprints:</strong> Deep knowledge of UE5's visual scripting system for gameplay mechanics</li>
+          <li><strong>Gameplay mechanics:</strong> Experience designing and implementing interactive game elements</li>
+          <li><strong>Multiplayer networking:</strong> Understanding of Unreal's replication system and how to sync gameplay across clients</li>
+          <li><strong>Event-driven programming:</strong> Ability to work with UE5's event system and input handling</li>
+          <li><strong>Animation & UI integration:</strong> Experience with animation blueprints and UMG for UI development</li>
+          <li><strong>AI scripting:</strong> Ability to set up behavior trees and AI controllers using Blueprints</li>
+          <li><strong>Optimization techniques:</strong> Understanding of performance bottlenecks related to Blueprints</li>
+          <li><strong>Collaboration skills:</strong> Work alongside C++ developers, artists, and designers to bring gameplay features to life</li>
+        </ul>
+        <br>
+        <h2>Apply Now:</h2>
+        <form id="application-form" enctype="multipart/form-data">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="resume">Upload Resume: (.pdf,.doc,.docx)</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+            
+            <label for="portfolio">Portfolio URL:</label>
+            <input type="url" id="portfolio" name="portfolio">
+
+            <label for="portfolio">Github URL:</label>
+            <input type="url" id="Github" name="Github">
+            
+            <button type="submit">Submit Application</button>
+        </form>
+        <br>
+        <a href="../job_openings.html">Go Back to Job Listings</a>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+          <div class="contact-info">
+            <p class="phone-number">Phone: <a href="tel:19184179357">(918) 417-9357</a></p> 
+            <p class="address">Address: 
+              <a href="javascript:void(0);"
+                 id="map-link">
+                 503 E 48th ST N, <br>Tulsa OK, 74126
+              </a>
+            </p>
+            <div id="map-modal" class="map-modal">
+              <div class="map-modal-content">
+                <span class="close">&times;</span>
+                <div class="map-options">
+                  <a href="https://maps.google.com/?q=503+E+48th+ST+N,+Tulsa,+OK,+74126"
+                    class="map-option google-maps" target="_blank" rel="noopener noreferrer">
+                    <img src="images/google-maps.png" alt="Google Maps">
+                  </a>
+                  <a href="maps://?q=503+E+48th+ST+N,+Tulsa,+OK,+74126"
+                    class="map-option apple-maps">
+                    <img src="images/apple-maps.png" alt="Apple Maps">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="social-list">
+            <a href="https://www.linkedin.com/company/dead-4-ever-entertainment-and-technology" target="_blank">
+              <i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://discord.gg/hjvYhxX87X" target="_blank">
+              <i class="fab fa-discord"></i></a>
+            <a href="https://www.patreon.com/Dead4Ever" target="_blank">
+              <i class="fa-brands fa-patreon"></i></a>
+            <a href="https://x.com/Dead4EverEnt" target="_blank">
+              <i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+          <p class="copyright">
+            &copy; <span id="currentYear"></span>, Dead 4 Ever Entertainment and Technology <br> All Rights Reserved
+          </p>
+        </div>
+      </footer>
+    </div>
+    
+    <script src="job_pages.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="../scripts/application_email.js"></script>
+</div>
+</body>
+</html>

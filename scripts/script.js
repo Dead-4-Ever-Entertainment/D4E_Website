@@ -4,6 +4,12 @@ window.onload = () => {
   }, 4);
 };
 
+function toggleForm(formId) {
+  const form = document.getElementById(formId);
+  // Toggle visibility of the contact form
+  form.style.display = form.style.display === "none" ? "block" : "none";
+}
+
 const hamburgerMenu = document.querySelector(".hamburger-menu");
 const container = document.querySelector(".container");
 const sidebar = document.querySelector(".sidebar");
